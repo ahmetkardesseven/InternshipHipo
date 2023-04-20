@@ -17,6 +17,7 @@
 		BE4EEBD329EF8E6700AB25A0 /* hipo.json in Resources */ = {isa = PBXBuildFile; fileRef = BE4EEBD229EF8E6700AB25A0 /* hipo.json */; };
 		BE4EEBD529EFA7F600AB25A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBD429EFA7F600AB25A0 /* TableViewCell.swift */; };
 		BEBFDCD929F004D800C50412 /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */; };
+		BEBFDCDC29F11BD800C50412 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEBFDCDB29F11BD800C50412 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BE4EEBD229EF8E6700AB25A0 /* hipo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hipo.json; sourceTree = "<group>"; };
 		BE4EEBD429EFA7F600AB25A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		BEBFDCDB29F11BD800C50412 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				BE4EEBBE29EF886300AB25A0 /* Assets.xcassets */,
 				BE4EEBC029EF886300AB25A0 /* LaunchScreen.storyboard */,
 				BE4EEBC329EF886300AB25A0 /* Info.plist */,
+				BEBFDCDA29F11BAE00C50412 /* Font */,
 			);
 			path = Hipo;
 			sourceTree = "<group>";
@@ -85,6 +88,14 @@
 				BE4EEBD029EF8E5300AB25A0 /* MembersModels.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BEBFDCDA29F11BAE00C50412 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BEBFDCDB29F11BD800C50412 /* Pacifico-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				BE4EEBD329EF8E6700AB25A0 /* hipo.json in Resources */,
 				BE4EEBBF29EF886300AB25A0 /* Assets.xcassets in Resources */,
 				BE4EEBBD29EF885F00AB25A0 /* Main.storyboard in Resources */,
+				BEBFDCDC29F11BD800C50412 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
