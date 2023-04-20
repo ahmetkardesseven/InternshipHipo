@@ -9,22 +9,68 @@ import UIKit
 
 class MemberDetailViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-        @IBOutlet weak var positionLabel: UILabel!
-        @IBOutlet weak var teamLabel: UILabel!
-        @IBOutlet weak var emailLabel: UILabel!
-        @IBOutlet weak var phoneNumberLabel: UILabel!
-        
-    @IBOutlet weak var github: UILabel!
+   
     var selectedMember: Members? // selected member passed from previous view controller
-        
-        override func viewDidLoad() {
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var followersLabel: UILabel!
+    
+    @IBOutlet weak var followingLabel: UILabel!
+    override func viewDidLoad() {
             super.viewDidLoad()
-            if let member = selectedMember {
-                nameLabel.text = member.name
-                positionLabel.text = member.hipo.position
-                github.text = member.github
+            if let username = selectedMember?.github {
+                let baseURL = "https://api.github.com/users/"
+                guard let url = URL(string: baseURL + username) else {
+                    print("Invalid URL for username: \(username)")
+                    return
+                }
+                
+                var request = URLRequest(url: url)
+                request.httpMethod = "GET"
+                
+                let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                    if let error = error {
+                        print("Error: \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    guard let data = data else {
+                        print("Data is nil for username: \(username)")
+                        return
+                    }
+                    
+                    do {
+                        if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                            let name = json["name"] as? String ?? "Salih Karasuluoglu"
+                            let followers = json["followers"] as? Int ?? 0
+                            let following = json["following"] as? Int ?? 0
+                            let avatarURL = json["avatar_url"] as? String ?? ""
+                            
+                            DispatchQueue.main.async {
+                                self.nameLabel.text = name
+                                self.followersLabel.text = "\(followers)"
+                                self.followingLabel.text = "\(following)"
+                                if let url = URL(string: avatarURL) {
+                                    do {
+                                        let data = try Data(contentsOf: url)
+                                        self.avatarImageView.image = UIImage(data: data)
+                                    } catch {
+                                        print("Error loading image from URL: \(error.localizedDescription)")
+                                    }
+                                }
+                            }
+                        }
+                    } catch {
+                        print("Error parsing JSON for username: \(username)")
+                    }
+                }
+                
+                task.resume()
+            }
+                
             }
         }
+    
    
-}
+

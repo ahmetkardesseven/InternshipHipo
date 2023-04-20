@@ -19,10 +19,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            
             tableView.delegate = self
             tableView.dataSource = self
             searchMembers.delegate = self
+            searchMembers.placeholder = "Search"
             
             if let path = Bundle.main.path(forResource: "hipo", ofType: "json") {
                 do {
@@ -52,9 +52,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       
         
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            
             filteredMembers = searchText.isEmpty ? members : members.filter({(member: Members) -> Bool in
                 return member.name.lowercased().contains(searchText.lowercased()) || member.hipo.position.lowercased().contains(searchText.lowercased())
             })
+           
             tableView.reloadData() // reload the table with filtered results
         }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -63,6 +65,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let memberDetailVC = storyboard.instantiateViewController(withIdentifier: "MemberDetailViewController") as! MemberDetailViewController
         memberDetailVC.selectedMember = member
         self.navigationController?.pushViewController(memberDetailVC, animated: true)
+    }
+    
+    @IBAction func AddButtonü(_ sender: Any) {
+        let alertController = UIAlertController(title: "Add Member", message: nil, preferredStyle: .alert)
+            alertController.addTextField { (textField) in
+                textField.placeholder = "Name"
+            }
+            alertController.addTextField { (textField) in
+                textField.placeholder = "Position"
+            }
+            alertController.addTextField { (textField) in
+                textField.placeholder = "Github"
+        }
+            let addAction = UIAlertAction(title: "Add", style: .default) { [weak self] (_) in
+                guard let self = self,
+                      let name = alertController.textFields?[0].text,
+                      let position = alertController.textFields?[1].text,
+                      let github = alertController.textFields?[2].text
+                      else { return }
+                let newMember = Members(name: name, github: github, hipo: Hipo(position: position, years_in_hipo: nil))
+                self.members.append(newMember)
+                self.filteredMembers = self.members
+                self.tableView.reloadData()
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertController.addAction(addAction)
+            alertController.addAction(cancelAction)
+            present(alertController, animated: true, completion: nil)
+            
+        
     }
 }
 
