@@ -10,7 +10,8 @@ import UIKit
 class MemberDetailViewController: UIViewController {
     
     
-    var selectedMember: Members? // selected member passed from previous view controller
+    var selectedMember: Members?
+    // selected member passed from previous view controller
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -56,6 +57,7 @@ class MemberDetailViewController: UIViewController {
                         let followers = json["followers"] as? Int ?? 0
                         let following = json["following"] as? Int ?? 0
                         let avatarURL = json["avatar_url"] as? String ?? ""
+                        
                         
                         DispatchQueue.main.async {
                             self.nameLabel.text = name

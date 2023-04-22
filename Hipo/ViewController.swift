@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "members"
+        self.navigationItem.title = "Members"
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(named: "title")
         appearance.titleTextAttributes = [.foregroundColor:UIColor(named: "writeColor")!,.font:UIFont(name: "Pacifico-Regular", size: 22)!]
@@ -115,5 +115,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
     }
+    
+    @IBAction func SortMembers(_ sender: Any) {
+        filteredMembers = members.sorted(by: { (member1, member2) -> Bool in
+               member1.name < member2.name
+           }).filter({ (member) -> Bool in
+               member.name.lowercased().contains("a")
+           })
+           
+           tableView.reloadData()
+        
+    }
+    
 }
 
