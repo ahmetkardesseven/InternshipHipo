@@ -9,17 +9,9 @@ import UIKit
 
 class RepoTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var updatedAtLabel: UILabel!
     @IBOutlet weak var stargazersCountLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
-    @IBOutlet weak var name1Label: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var repoName: UILabel!
    
-
 }

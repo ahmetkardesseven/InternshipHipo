@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		BE4EEBB629EF885F00AB25A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBB529EF885F00AB25A0 /* AppDelegate.swift */; };
 		BE4EEBB829EF885F00AB25A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBB729EF885F00AB25A0 /* SceneDelegate.swift */; };
-		BE4EEBBA29EF885F00AB25A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBB929EF885F00AB25A0 /* ViewController.swift */; };
+		BE4EEBBA29EF885F00AB25A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBB929EF885F00AB25A0 /* HomeViewController.swift */; };
 		BE4EEBBD29EF885F00AB25A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EEBBB29EF885F00AB25A0 /* Main.storyboard */; };
 		BE4EEBBF29EF886300AB25A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4EEBBE29EF886300AB25A0 /* Assets.xcassets */; };
 		BE4EEBC229EF886300AB25A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EEBC029EF886300AB25A0 /* LaunchScreen.storyboard */; };
-		BE4EEBD129EF8E5300AB25A0 /* MembersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBD029EF8E5300AB25A0 /* MembersModels.swift */; };
 		BE4EEBD329EF8E6700AB25A0 /* hipo.json in Resources */ = {isa = PBXBuildFile; fileRef = BE4EEBD229EF8E6700AB25A0 /* hipo.json */; };
 		BE4EEBD529EFA7F600AB25A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EEBD429EFA7F600AB25A0 /* TableViewCell.swift */; };
 		BEB013D229F3F9D600BCE2F0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB013D129F3F9D600BCE2F0 /* String+Extension.swift */; };
 		BEB013D429F407D500BCE2F0 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB013D329F407D500BCE2F0 /* RepoTableViewCell.swift */; };
+		BEB013DF29F45CDD00BCE2F0 /* HipoJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB013DE29F45CDD00BCE2F0 /* HipoJson.swift */; };
+		BEB013E129F45CEF00BCE2F0 /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB013E029F45CEF00BCE2F0 /* Members.swift */; };
+		BEB013E329F45CFB00BCE2F0 /* Hipo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB013E229F45CFB00BCE2F0 /* Hipo.swift */; };
 		BEBFDCD929F004D800C50412 /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */; };
 		BEBFDCDC29F11BD800C50412 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEBFDCDB29F11BD800C50412 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -26,16 +28,18 @@
 		BE4EEBB229EF885F00AB25A0 /* Hipo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4EEBB529EF885F00AB25A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE4EEBB729EF885F00AB25A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE4EEBB929EF885F00AB25A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE4EEBB929EF885F00AB25A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BE4EEBBC29EF885F00AB25A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE4EEBBE29EF886300AB25A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE4EEBC129EF886300AB25A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE4EEBC329EF886300AB25A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE4EEBD029EF8E5300AB25A0 /* MembersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersModels.swift; sourceTree = "<group>"; };
 		BE4EEBD229EF8E6700AB25A0 /* hipo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hipo.json; sourceTree = "<group>"; };
 		BE4EEBD429EFA7F600AB25A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BEB013D129F3F9D600BCE2F0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BEB013D329F407D500BCE2F0 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		BEB013DE29F45CDD00BCE2F0 /* HipoJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipoJson.swift; sourceTree = "<group>"; };
+		BEB013E029F45CEF00BCE2F0 /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
+		BEB013E229F45CFB00BCE2F0 /* Hipo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hipo.swift; sourceTree = "<group>"; };
 		BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
 		BEBFDCDB29F11BD800C50412 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,18 +74,14 @@
 		BE4EEBB429EF885F00AB25A0 /* Hipo */ = {
 			isa = PBXGroup;
 			children = (
-				BEB013D029F3F9A300BCE2F0 /* Extension */,
-				BE4EEBB529EF885F00AB25A0 /* AppDelegate.swift */,
-				BE4EEBB729EF885F00AB25A0 /* SceneDelegate.swift */,
-				BE4EEBB929EF885F00AB25A0 /* ViewController.swift */,
-				BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */,
-				BE4EEBD429EFA7F600AB25A0 /* TableViewCell.swift */,
-				BEB013D329F407D500BCE2F0 /* RepoTableViewCell.swift */,
-				BE4EEBCF29EF8E3B00AB25A0 /* Model */,
-				BE4EEBBB29EF885F00AB25A0 /* Main.storyboard */,
-				BE4EEBBE29EF886300AB25A0 /* Assets.xcassets */,
-				BE4EEBC029EF886300AB25A0 /* LaunchScreen.storyboard */,
 				BE4EEBC329EF886300AB25A0 /* Info.plist */,
+				BEB013D929F454A700BCE2F0 /* App */,
+				BEB013DA29F454BE00BCE2F0 /* Support */,
+				BEB013D029F3F9A300BCE2F0 /* Extension */,
+				BEB013D829F450C200BCE2F0 /* Json */,
+				BE4EEBCF29EF8E3B00AB25A0 /* Model */,
+				BEB013D729F4508E00BCE2F0 /* View */,
+				BEB013DB29F4552D00BCE2F0 /* Controllers */,
 				BEBFDCDA29F11BAE00C50412 /* Font */,
 			);
 			path = Hipo;
@@ -90,8 +90,9 @@
 		BE4EEBCF29EF8E3B00AB25A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BE4EEBD229EF8E6700AB25A0 /* hipo.json */,
-				BE4EEBD029EF8E5300AB25A0 /* MembersModels.swift */,
+				BEB013E229F45CFB00BCE2F0 /* Hipo.swift */,
+				BEB013E029F45CEF00BCE2F0 /* Members.swift */,
+				BEB013DE29F45CDD00BCE2F0 /* HipoJson.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +103,51 @@
 				BEB013D129F3F9D600BCE2F0 /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BEB013D729F4508E00BCE2F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EEBD429EFA7F600AB25A0 /* TableViewCell.swift */,
+				BEB013D329F407D500BCE2F0 /* RepoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEB013D829F450C200BCE2F0 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EEBD229EF8E6700AB25A0 /* hipo.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		BEB013D929F454A700BCE2F0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EEBB729EF885F00AB25A0 /* SceneDelegate.swift */,
+				BE4EEBB529EF885F00AB25A0 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEB013DA29F454BE00BCE2F0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EEBBB29EF885F00AB25A0 /* Main.storyboard */,
+				BE4EEBBE29EF886300AB25A0 /* Assets.xcassets */,
+				BE4EEBC029EF886300AB25A0 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BEB013DB29F4552D00BCE2F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE4EEBB929EF885F00AB25A0 /* HomeViewController.swift */,
+				BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BEBFDCDA29F11BAE00C50412 /* Font */ = {
@@ -186,10 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4EEBD529EFA7F600AB25A0 /* TableViewCell.swift in Sources */,
+				BEB013E329F45CFB00BCE2F0 /* Hipo.swift in Sources */,
+				BEB013E129F45CEF00BCE2F0 /* Members.swift in Sources */,
 				BEB013D229F3F9D600BCE2F0 /* String+Extension.swift in Sources */,
-				BE4EEBBA29EF885F00AB25A0 /* ViewController.swift in Sources */,
+				BEB013DF29F45CDD00BCE2F0 /* HipoJson.swift in Sources */,
+				BE4EEBBA29EF885F00AB25A0 /* HomeViewController.swift in Sources */,
 				BEB013D429F407D500BCE2F0 /* RepoTableViewCell.swift in Sources */,
-				BE4EEBD129EF8E5300AB25A0 /* MembersModels.swift in Sources */,
 				BE4EEBB629EF885F00AB25A0 /* AppDelegate.swift in Sources */,
 				BEBFDCD929F004D800C50412 /* MemberDetailViewController.swift in Sources */,
 				BE4EEBB829EF885F00AB25A0 /* SceneDelegate.swift in Sources */,
