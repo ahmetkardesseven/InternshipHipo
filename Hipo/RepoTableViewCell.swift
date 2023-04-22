@@ -8,16 +8,18 @@
 import UIKit
 
 class RepoTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var updatedAtLabel: UILabel!
+    @IBOutlet weak var stargazersCountLabel: UILabel!
+    @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var name1Label: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+   
 
 }

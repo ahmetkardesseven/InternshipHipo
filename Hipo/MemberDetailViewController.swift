@@ -7,19 +7,23 @@
 
 import UIKit
 
-class MemberDetailViewController: UIViewController {
+class MemberDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     var selectedMember: Members?
-    // selected member passed from previous view controller
+    var repos: [[String: Any]] = []
+    
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var followersLabel: UILabel!
-    
     @IBOutlet weak var followingLabel: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         self.navigationItem.title = "Name"
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(named: "title")
@@ -82,6 +86,68 @@ class MemberDetailViewController: UIViewController {
         }
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            if let username = selectedMember?.github {
+                let baseURL = "https://api.github.com/users/"
+                guard let url = URL(string: baseURL + username + "/repos") else {
+                    print("Invalid URL for username: \(username)")
+                    return
+                }
+                
+                var request = URLRequest(url: url)
+                request.httpMethod = "GET"
+                
+                let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                    if let error = error {
+                        print("Error: \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    guard let data = data else {
+                        print("Data is nil for username: \(username)")
+                        return
+                    }
+                    
+                    do {
+                        if let jsonArray = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
+                            self.repos = jsonArray
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                    } catch {
+                        print("Error parsing JSON for username: \(username)")
+                    }
+                }
+                
+                task.resume()
+            }
+        }
+        
+        // MARK: - Table view data source
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return repos.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath) as! RepoTableViewCell
+            
+            let repo = repos[indexPath.row]
+            cell.name1Label.text = repo["name"] as? String ?? "-"
+            cell.languageLabel.text = repo["language"] as? String ?? "-"
+            cell.stargazersCountLabel.text = "\(repo["stargazers_count"] as? Int ?? 0)"
+            cell.updatedAtLabel.text = repo["updated_at"] as? String ?? "-"
+            
+            return cell
+        }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 80
+        }
+
+    
 }
 
 

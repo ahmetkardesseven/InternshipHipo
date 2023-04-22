@@ -243,43 +243,55 @@
                                 <rect key="frame" x="0.0" y="423" width="414" height="439"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="71" id="MrB-er-hdt">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="71"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RepoCell" rowHeight="130" id="MrB-er-hdt" customClass="RepoTableViewCell" customModule="Hipo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MrB-er-hdt" id="add-lg-cB1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vty-tN-liR">
-                                                    <rect key="frame" x="35" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVS-2o-WTW">
+                                                    <rect key="frame" x="332.5" y="21" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVS-2o-WTW">
-                                                    <rect key="frame" x="35" y="40" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-2d-Xdc">
+                                                    <rect key="frame" x="40" y="51.5" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7V8-Pe-dQs">
-                                                    <rect key="frame" x="296" y="39" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7V8-Pe-dQs">
+                                                    <rect key="frame" x="40" y="21" width="38" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-2d-Xdc">
-                                                    <rect key="frame" x="296" y="10" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vty-tN-liR">
+                                                    <rect key="frame" x="332.5" y="51.5" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ydo-2d-Xdc" firstAttribute="leading" secondItem="add-lg-cB1" secondAttribute="leadingMargin" constant="20" id="0Lk-K6-s9a"/>
+                                                <constraint firstItem="qVS-2o-WTW" firstAttribute="top" secondItem="add-lg-cB1" secondAttribute="topMargin" constant="10" id="BUN-4T-IDZ"/>
+                                                <constraint firstItem="Vty-tN-liR" firstAttribute="top" secondItem="qVS-2o-WTW" secondAttribute="bottom" constant="10" id="DjV-it-aQW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qVS-2o-WTW" secondAttribute="trailing" constant="20" id="IQG-Xr-Saf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Vty-tN-liR" secondAttribute="trailing" constant="20" id="S6H-Ge-W2V"/>
+                                                <constraint firstItem="7V8-Pe-dQs" firstAttribute="leading" secondItem="add-lg-cB1" secondAttribute="leadingMargin" constant="20" id="ULf-3E-SF0"/>
+                                                <constraint firstItem="7V8-Pe-dQs" firstAttribute="top" secondItem="add-lg-cB1" secondAttribute="topMargin" constant="10" id="c0k-1M-lwN"/>
+                                                <constraint firstItem="Ydo-2d-Xdc" firstAttribute="top" secondItem="7V8-Pe-dQs" secondAttribute="bottom" constant="10" id="gT8-cT-EMO"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="languageLabel" destination="qVS-2o-WTW" id="40j-tY-gDl"/>
+                                            <outlet property="name1Label" destination="Vty-tN-liR" id="4QQ-Is-3hE"/>
+                                            <outlet property="stargazersCountLabel" destination="Ydo-2d-Xdc" id="KgG-Pt-oXw"/>
+                                            <outlet property="updatedAtLabel" destination="7V8-Pe-dQs" id="ydv-Zt-hyz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -303,6 +315,7 @@
                         <outlet property="followersLabel" destination="ToR-wo-ozG" id="31x-d1-ZQE"/>
                         <outlet property="followingLabel" destination="89A-4N-Zp8" id="8RQ-AW-msC"/>
                         <outlet property="nameLabel" destination="cJU-Fk-2S4" id="UL3-ij-dKY"/>
+                        <outlet property="tableView" destination="unR-GJ-KFc" id="L8R-rM-EZu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qj-Wx-xlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
