@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; configuration.title = "ADD NEW MEMBERS"; ObjectID = "6XX-5V-jC6"; */
+"6XX-5V-jC6.configuration.title" = "YENİ ÜYE EKLE";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6XX-5V-jC6"; */
+"6XX-5V-jC6.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "7V8-Pe-dQs"; */
+"7V8-Pe-dQs.text" = "Time";
+
+/* Class = "UILabel"; text = "following"; ObjectID = "89A-4N-Zp8"; */
+"89A-4N-Zp8.text" = "takip etme";
+
+/* Class = "UIButton"; configuration.title = "SORT MEMBERS"; ObjectID = "Eto-0h-O3r"; */
+"Eto-0h-O3r.configuration.title" = "ÜYELERİ SIRALAMA";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Eto-0h-O3r"; */
+"Eto-0h-O3r.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "followers"; ObjectID = "IoB-QW-64K"; */
+"IoB-QW-64K.text" = "takipçiler";
+
+/* Class = "UILabel"; text = "followers"; ObjectID = "ToR-wo-ozG"; */
+"ToR-wo-ozG.text" = "takipçiler";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vty-tN-liR"; */
+"Vty-tN-liR.text" = "Label";
+
+/* Class = "UILabel"; text = "Star"; ObjectID = "Ydo-2d-Xdc"; */
+"Ydo-2d-Xdc.text" = "Star";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "cJU-Fk-2S4"; */
+"cJU-Fk-2S4.text" = "Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qVS-2o-WTW"; */
+"qVS-2o-WTW.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "xLs-2W-Cbt"; */
+"xLs-2W-Cbt.text" = "Name";
+
+/* Class = "UILabel"; text = "following"; ObjectID = "xrO-P2-mLE"; */
+"xrO-P2-mLE.text" = "takip etme";
+
+/* Class = "UILabel"; text = "Position"; ObjectID = "yag-v5-hcB"; */
+"yag-v5-hcB.text" = "Position";

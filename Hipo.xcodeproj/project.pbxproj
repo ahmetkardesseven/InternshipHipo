@@ -40,6 +40,8 @@
 		BEB013DE29F45CDD00BCE2F0 /* HipoJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipoJson.swift; sourceTree = "<group>"; };
 		BEB013E029F45CEF00BCE2F0 /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
 		BEB013E229F45CFB00BCE2F0 /* Hipo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hipo.swift; sourceTree = "<group>"; };
+		BEB013E429F46B4200BCE2F0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		BEB013E529F46B4300BCE2F0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BEBFDCD829F004D800C50412 /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
 		BEBFDCDB29F11BD800C50412 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = BE4EEBA929EF885F00AB25A0;
 			productRefGroup = BE4EEBB329EF885F00AB25A0 /* Products */;
@@ -251,6 +254,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE4EEBBC29EF885F00AB25A0 /* Base */,
+				BEB013E429F46B4200BCE2F0 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE4EEBC129EF886300AB25A0 /* Base */,
+				BEB013E529F46B4300BCE2F0 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -330,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
