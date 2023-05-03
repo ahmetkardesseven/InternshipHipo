@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hcA-vT-Uua">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hcA-vT-Uua">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -161,10 +162,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxt-My-X4i">
-                                <rect key="frame" x="0.0" y="92" width="414" height="331"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="370"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-Fk-2S4">
-                                        <rect key="frame" x="100" y="279.5" width="214" height="20.5"/>
+                                        <rect key="frame" x="100" y="259.5" width="214" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -228,7 +229,7 @@
                                 <constraints>
                                     <constraint firstItem="cJU-Fk-2S4" firstAttribute="centerX" secondItem="Fxt-My-X4i" secondAttribute="centerX" id="Am2-gG-7Og"/>
                                     <constraint firstAttribute="trailing" secondItem="cJU-Fk-2S4" secondAttribute="trailing" constant="100" id="Exv-DV-RM7"/>
-                                    <constraint firstItem="cJU-Fk-2S4" firstAttribute="top" secondItem="a2e-Z9-k0E" secondAttribute="bottom" constant="30" id="ULJ-A8-buI"/>
+                                    <constraint firstItem="cJU-Fk-2S4" firstAttribute="top" secondItem="a2e-Z9-k0E" secondAttribute="bottom" constant="10" id="ULJ-A8-buI"/>
                                     <constraint firstItem="a2e-Z9-k0E" firstAttribute="top" secondItem="9F5-ny-jeJ" secondAttribute="bottom" constant="20" id="YVr-hQ-Xq6"/>
                                     <constraint firstAttribute="trailing" secondItem="9F5-ny-jeJ" secondAttribute="trailing" constant="90" id="Yzx-Kc-hT0"/>
                                     <constraint firstItem="a2e-Z9-k0E" firstAttribute="leading" secondItem="Fxt-My-X4i" secondAttribute="leading" constant="90" id="Ztu-Ox-yfn"/>
@@ -240,7 +241,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="unR-GJ-KFc">
-                                <rect key="frame" x="0.0" y="423" width="414" height="439"/>
+                                <rect key="frame" x="0.0" y="462" width="414" height="400"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RepoCell" rowHeight="80" id="MrB-er-hdt" customClass="RepoTableViewCell" customModule="Hipo" customModuleProvider="target">
@@ -305,7 +306,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LJj-rk-KFq" firstAttribute="trailing" secondItem="Fxt-My-X4i" secondAttribute="trailing" id="Izw-x9-9al"/>
-                            <constraint firstItem="LJj-rk-KFq" firstAttribute="bottom" secondItem="Fxt-My-X4i" secondAttribute="bottom" constant="439" id="VMB-44-36O"/>
+                            <constraint firstItem="LJj-rk-KFq" firstAttribute="bottom" secondItem="Fxt-My-X4i" secondAttribute="bottom" constant="400" id="VMB-44-36O"/>
                             <constraint firstItem="Fxt-My-X4i" firstAttribute="top" secondItem="LJj-rk-KFq" secondAttribute="top" id="WTj-jw-MCb"/>
                             <constraint firstItem="Fxt-My-X4i" firstAttribute="leading" secondItem="LJj-rk-KFq" secondAttribute="leading" id="bwF-VJ-9ap"/>
                             <constraint firstItem="LJj-rk-KFq" firstAttribute="trailing" secondItem="unR-GJ-KFc" secondAttribute="trailing" id="cPA-Ub-po7"/>
